@@ -1,0 +1,28 @@
+package Packet;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Type the Price:");
+		
+		double pr = scan.nextDouble();
+		
+		double st = pr*18/100;
+		
+		pr +=  st;
+		
+		System.out.println("Product's Price (ST included): " + new DecimalFormat("#.##").format(pr));
+		
+		System.out.println("Product's ST(Sale Tax) Price: " + new DecimalFormat("#.##").format(st));
+		
+		
+		
+	}
+
+}
